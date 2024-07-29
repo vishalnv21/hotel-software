@@ -5,15 +5,20 @@ body {
   font-size: 13px !important;
   font-weight: 400 !important;
   line-height: 22px !important;
-  color: #333 !important;
-  background-color: #fff !important;
+  color: var(--dark-color) !important;
+  background-color: var(--light-color) !important;
+}
+:root {
+  --light-color: #fff;
+  --bg-color: #8467c6;
+  --dark-color: #333;
 }
 p {
   margin: 0 !important;
-  color: #333 !important;
+  color: var(--dark-color) !important;
 }
 a {
-  color: #333;
+  color: var(--dark-color);
 }
 h1,
 .h1,
@@ -30,7 +35,7 @@ h6,
   font-family: "Rubik", sans-serif;
   font-weight: 400 !important;
   line-height: 1.2 !important ;
-  color: #333;
+  color: var(--dark-color);
   margin-bottom: 0 !important;
 }
 .btn:focus {
@@ -54,9 +59,9 @@ html {
 .header-wrapper .logo {
   text-align: center;
   padding: 5px;
-  background-color: cornflowerblue;
+  background-color: var(--bg-color);
   border-bottom: 1px solid #c2e4f6;
-  color: #fff;
+  color: var(--light-color);
   font-weight: 500;
 }
 .header-wrapper .header {
@@ -71,7 +76,7 @@ html {
   padding: 4px 12px;
   margin: 0;
   border-radius: 0;
-  background-color: #fff;
+  background-color: var(--light-color);
   border: 1px solid #c2e4f6;
   text-wrap: nowrap;
 }
@@ -82,7 +87,7 @@ html {
   gap: 2px;
 }
 .header .header-nav .nav-item .nav-link {
-  color: #333;
+  color: var(--dark-color);
   transition: all 0.2s;
 }
 .header .header-nav .nav-item .nav-link i {
@@ -91,13 +96,13 @@ html {
 }
 .header .header-nav .nav-item .nav-link:hover {
   box-shadow: rgba(0, 0, 0, 0.16) 1px 0px 1px;
-  background-color: cornflowerblue;
-  color: #fff;
+  background-color: var(--bg-color);
+  color: var(--light-color);
 }
 .header .header-nav .nav-item .nav-link.active {
   box-shadow: rgba(0, 0, 0, 0.16) 1px 0px 1px;
-  background-color: cornflowerblue;
-  color: #fff;
+  background-color: var(--bg-color);
+  color: var(--light-color);
 }
 .main-wrapper .page-content {
   background-color: #c2e4f6;
@@ -134,7 +139,7 @@ html {
   border-radius: 0 !important;
   font-size: 13.5px !important;
   line-height: 1.6 !important;
-  color: #333 !important;
+  color: var(--dark-color) !important;
 }
 .form-label {
   margin-bottom: 4px !important;
@@ -143,7 +148,7 @@ html {
   text-align: center;
   padding: 4px;
   border-top: 1px solid #c2e4f6;
-  background-color: #fff;
+  background-color: var(--light-color);
 }
 .main-wrapper .page-content .title {
   padding: 5px 7px;
@@ -153,10 +158,10 @@ html {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 10px;
-  background-color: cornflowerblue;
+  background-color: var(--bg-color);
 }
 .main-wrapper .page-content .title h6 {
-  color: #fff;
+  color: var(--light-color);
   font-size: 14px;
   font-weight: 600 !important;
 }
@@ -164,8 +169,8 @@ html {
   padding: 5px 12px;
   font-size: 14px;
   border-radius: 0;
-  background-color: #fff;
-  color: #333;
+  background-color: var(--light-color);
+  color: var(--dark-color);
 }
 .btn:active {
   transform: scale(0.97);
@@ -208,7 +213,7 @@ html {
 }
 .auth-section .auth-card .form-row .btn {
   background-color: #5b8eda;
-  color: #fff;
+  color: var(--light-color);
   width: 100%;
   border-radius: 0;
   padding: 10px;
@@ -218,8 +223,8 @@ html {
 }
 .pagination .page-link {
   padding: 1px 7px;
-  border: 1px solid #333;
-  color: #333;
+  border: 1px solid var(--dark-color);
+  color: var(--dark-color);
   border-radius: 0 !important;
 }
 .pagination .page-link:hover,
@@ -229,52 +234,62 @@ html {
 }
 .content-card .title .stats {
   color: #000;
-  background-color: #fff;
+  background-color: var(--light-color);
   padding: 2px 5px;
 }
 .content-card .title .stats:first-child {
   margin-right: 5px;
 }
 .content-card .title .stats .booked {
-  background-color: green;
-  border-color: green;
-  color: #fff;
+  background-color: #018749;
+  border-color: #018749;
+  color: var(--light-color);
   box-shadow: none;
 }
 .content-card .title .stats .vaccant {
-  background-color: #5b8eda;
-  border-color: #5b8eda;
-  color: #fff;
+  background-color: #DE3163;
+  border-color: #DE3163;
+  color: var(--light-color);
   box-shadow: none;
 }
 .room_entry {
   position: relative;
   width: 100%;
+  font-size: 17px !important;
   padding: 10px !important;
-  background-color: #5b8eda !important;
-  color: #fff !important;
+  background-color: #DE3163 !important;
+  color: var(--light-color) !important;
   border-radius: 0 !important;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 .room_entry p {
-  font-size: 16.5px;
-  color: #fff !important;
+  color: var(--light-color) !important;
   font-weight: 600;
+  font-size: 18px !important;
 }
 .room_entry.booked {
-  background-color: green !important;
+  background-color: #018749 !important;
+  color: var(--light-color) !important;
+}
+.room_entry.booked p{
+  color: var(--light-color) !important;
+  font-size: 18px !important;
 }
 ::-webkit-scrollbar {
   width: 5px;
   display: none;
 }
 ::-webkit-scrollbar-track {
-  background: #fff;
+  background: var(--light-color);
 }
 ::-webkit-scrollbar-thumb {
   background: #f5f5f5;
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #e5e5e5;
+}
+.room_tabs {
+  margin-bottom: 10px !important;
 }
 @media (max-width: 991px) {
   .header .header-nav {
